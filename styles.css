@@ -1,0 +1,269 @@
+/*css compilación less*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.fondo {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.315), rgba(0, 0, 0, 0.8)),
+    url(m.jpg);
+  background-size: cover;
+}
+
+.menu {
+  display: flex;
+  padding: 40px 120px;
+}
+
+
+.logo h1 {
+  text-align: center;
+  width: 135px;
+  cursor: pointer;
+}
+
+
+.logo2 {
+  margin-top: 20px;
+  margin-left: 35px;
+  position: absolute;
+  top: 20px;
+  visibility: hidden;
+  cursor: pointer;
+  
+}
+
+
+.logo:hover{
+  visibility: hidden;
+  
+}
+
+.logo:hover #logo2 img{
+visibility: visible;
+width: 100px;
+
+
+}
+
+
+
+.menuLinks {
+  flex: 1;
+}
+
+.menuLinks ul {
+  margin-left: 50px;
+  display: inline;
+}
+
+.menuLinks ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px;
+}
+
+.menuLinks ul a {
+  color: black;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.menuLinks ul li::after {
+  content: " ";
+  background: rgb(30, 255, 0);
+  width: 100px;
+  height: 2px;
+  margin: auto;
+  display: block;
+  transition: 0.5s;
+}
+
+.menuLinks ul li::after::after {
+  width: 100%;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 0;
+  background: coral;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.menuLinks .btn {
+  float: right;
+}
+
+.banner {
+  margin: 250px 130px 0 130px;
+  color: white;
+}
+
+.banner h1 {
+  font-size: 80px;
+  margin-bottom: 30px;
+  margin-top: -20px;
+}
+
+.banner h1 span {
+  color: rgb(68, 235, 46);
+}
+
+/*responsive*/
+@media (max-width: 700px) {
+  .banner {
+    margin: 80px 40px;
+  }
+
+  .banner h1 {
+    font-size: 50px;
+  }
+
+  .menu {
+    padding: 10px 30px;
+  }
+
+  .menu li {
+    display: block;
+    color: rgba(255, 255, 255, 0.616);
+    margin: 10px 25px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .menuLinks {
+    height: 100vh;
+    width: 200px;
+    background-color: rgb(0, 0, 0);
+    top: 0;
+    right: 0;
+    position: absolute;
+    text-align: left;
+    z-index: 2;
+  }
+
+  .menuLinks .btn {
+    float: none;
+    margin-left: 35px;
+    margin-top: 20px;
+  }
+
+  .divLess {
+    display: block;
+    margin-top: 20px;
+    position: relative;
+  }
+
+  #right H3 {
+    font-size: 15px;
+  }
+}
+
+/*valores originales de compilación less*/
+
+.divLess {
+  height: 50px;
+  display: inline-block;
+}
+
+#left {
+  width: 100px;
+  background-color: #004590;
+}
+
+#right {
+  width: 200px;
+  background-color: #03a9f4;
+}
+
+/*CSS AÑADIDO a los valores originales de less*/
+
+.divLess {
+  float: right;
+  padding: 5px;
+  font-size: 12px;
+  background: rgb(30, 255, 0);
+  cursor: pointer;
+}
+
+.divLess a {
+  text-decoration: none;
+}
+
+.divLess h3 {
+  padding: 15px 0 0 0;
+  color: black;
+  text-decoration: none;
+}
+
+.divLess:hover {
+  background-color: black;
+  transition: 0.5s;
+}
+
+.divLess h3:hover {
+  color: white;
+}
+
+#left {
+  margin-top: 20px;
+  margin-left: 58px;
+  width: 100px;
+  font-size: 10px;
+  background-color: #004590;
+  padding: 5px;
+}
+
+#left a {
+  text-decoration: none;
+}
+
+#left h3 {
+  color: white;
+  text-align: center;
+}
+
+#left:active {
+  background-color: rgb(30, 255, 0);
+  transition: 0.5s;
+}
+
+#right:active {
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.5s;
+}
+
+#right {
+  float: right;
+  margin-top: 10px;
+  margin-left: 58px;
+  height: 20px;
+  background-color: #03a9f4;
+  padding: 3px;
+}
+
+#right a {
+  text-decoration: none;
+}
+
+#right H3 {
+  color: white;
+  text-align: right;
+}
+
+#right img {
+  color: #004590;
+  width: 20px;
+  float: left;
+  margin-left: 5px;
+}
